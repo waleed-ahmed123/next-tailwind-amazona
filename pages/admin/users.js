@@ -73,16 +73,22 @@ function AdminUsersScreen() {
         <div>
           <ul>
             <li>
-              <Link href="/admin/dashboard">Dashboard</Link>
+              <Link legacyBehavior href="/admin/dashboard">
+                Dashboard
+              </Link>
             </li>
             <li>
-              <Link href="/admin/orders">Orders</Link>
+              <Link legacyBehavior href="/admin/orders">
+                Orders
+              </Link>
             </li>
             <li>
-              <Link href="/admin/products">Products</Link>
+              <Link legacyBehavior href="/admin/products">
+                Products
+              </Link>
             </li>
             <li>
-              <Link href="/admin/users">
+              <Link legacyBehavior href="/admin/users">
                 <a className="font-bold">Users</a>
               </Link>
             </li>
@@ -115,7 +121,11 @@ function AdminUsersScreen() {
                       <td className=" p-5 ">{user.email}</td>
                       <td className=" p-5 ">{user.isAdmin ? 'YES' : 'NO'}</td>
                       <td className=" p-5 ">
-                        <Link href={`/admin/user/${user._id}`} passHref>
+                        <Link
+                          legacyBehavior
+                          href={`/admin/user/${user._id}`}
+                          passHref
+                        >
                           <a type="button" className="default-button">
                             Edit
                           </a>
