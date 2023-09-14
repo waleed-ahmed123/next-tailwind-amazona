@@ -138,3 +138,7 @@
     1. create users page
     2. create users api
     3. use api in page
+35. Add Carousel
+    1. create featured products
+    2. feed carousel data
+    3. show popular products
