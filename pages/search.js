@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 import Layout from '../components/Layout';
 import { Store } from '../utils/Store';
 import { XCircleIcon } from '@heroicons/react/outline';
-import ProductItem from '../components/ProductItem';
+import ProductItem from '../components/Productitem';
 import Product from '../models/Product';
 import db from '../utils/db';
 
